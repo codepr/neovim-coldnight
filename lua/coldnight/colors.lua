@@ -28,6 +28,7 @@ function colors.generate()
     colors.blossom = '#D3869B'
     colors.blossom1 = '#D0878D'
   else
+    colors.white = '#000000'
     colors.bg = '#E0E0E0'
     colors.bgmid = '#DEDEDE'
     colors.bglight = '#959595'

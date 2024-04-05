@@ -29,7 +29,7 @@ local function set_groups()
   local groups = {
     -- Base.
     Normal = { fg = colors.fg, bg = colors.bg },
-    NormalFloat = { bg = colors.bg },
+    NormalFloat = { bg = colors.bglight },
     FloatBorder = { fg = colors.fg1 },
     FloatTitle = { fg = colors.fg },
     ColorColumn = { bg = colors.bgmid },
@@ -49,12 +49,12 @@ local function set_groups()
     FoldColumn = { bg = colors.bg },
     SignColumn = { bg = colors.bg },
 
-    MatchParen = { sp = colors.blossom, underline = true },
+    MatchParen = { bg = colors.bgmidlight },
     ModeMsg = { fg = colors.leaf },
     MoreMsg = { fg = colors.leaf },
     NonText = { fg = colors.bglight },
     Pmenu = { fg = colors.fg, bg = colors.bgmidlight },
-    PmenuSel = { fg = colors.fg, bg = colors.bg, reverse = true },
+    PmenuSel = { fg = colors.bg, bg = colors.brightsky, reverse = false, bold = true },
     Question = { fg = colors.leaf },
     Search = { fg = colors.bg, bg = colors.brightsky },
     CurSearch = { fg = colors.fg, bg = colors.bgmid },
@@ -75,11 +75,11 @@ local function set_groups()
     WarningMsg = { fg = colors.wood },
 
     Comment = { fg = colors.bglight, italic = true },
-    Constant = { fg = colors.rose },
+    Constant = { fg = colors.white },
     Number = { fg = colors.blossom },
     String = { fg = colors.sky },
     Identifier = { fg = colors.fg },
-    Function = { fg = colors.fg },
+    Function = { fg = colors.fg, bold = true },
     Keyword = { fg = colors.water, bold = true  },
     Statement = { fg = colors.water },
     Operator = { fg = colors.fg },
@@ -89,7 +89,7 @@ local function set_groups()
     Typedef = { fg = colors.water },
     Structure = { fg = colors.water },
     Special = { fg = colors.fg },
-    Delimiter = { fg = colors.bg },
+    Delimiter = { fg = colors.fg },
     Underlined = { sp = colors.water, underline = true },
     Ignore = { fg = colors.fg },
     Error = { fg = colors.rose },
@@ -121,14 +121,15 @@ local function set_groups()
     markdownCode = { fg = colors.sky },
 
     -- TreeSitter.
-    ['@property'] = { fg = colors.water },
+    ['@property'] = { fg = colors.fg },
+    ['@function.builtin'] = {fg = colors.fg },
     ['@tag'] = { fg = colors.sky },
-    ['@tag.attribute'] = { fg = colors.water },
+    ['@tag.attribute'] = { fg = colors.fg },
     ['@tag.delimiter'] = { link = 'Delimiter' },
     ['@type.qualifier'] = { fg = colors.sky },
     ['@variable'] = { fg = colors.fg },
-    ['@variable.builtin'] = { fg = colors.water },
-    ['@variable.member'] = { fg = colors.water },
+    ['@variable.builtin'] = { fg = colors.fg },
+    ['@variable.member'] = { fg = colors.fg },
     ['@variable.parameter'] = { fg = colors.fg },
     ['@module'] = { fg = colors.water },
     ['@markup.heading'] = { fg = colors.sky },
@@ -140,7 +141,7 @@ local function set_groups()
     ['@lsp.type.enum'] = { link = '@type' },
     ['@lsp.type.interface'] = { link = '@type' },
     ['@lsp.type.struct'] = { link = '@variable.member' },
-    ['@lsp.type.parameter'] = { fg = colors.water },
+    ['@lsp.type.parameter'] = { fg = colors.fg },
     ['@lsp.type.field'] = { link = '@variable.member' },
     ['@lsp.type.variable'] = { link = '@variable' },
     ['@lsp.type.property'] = { link = '@property' },
@@ -152,7 +153,7 @@ local function set_groups()
     ['@lsp.mod.constant'] = { link = '@constant' },
 
     -- TreesitterContext.
-    TreesitterContext = { bg = colors.bg },
+    TreesitterContext = { bg = colors.water },
 
     -- Gitsigns.
     GitSignsAddLn = { fg = colors.sky },
@@ -205,7 +206,7 @@ local function set_groups()
     NvimTreeGitDeleted = { fg = colors.rose },
 
     NvimTreeFolderName = { fg = colors.water },
-    NvimTreeFolderIcon = { fg = colors.wood },
+    NvimTreeFolderIcon = { fg = colors.water },
     NvimTreeOpenedFolderName = { fg = colors.water },
     NvimTreeRootFolder = { fg = colors.water },
     NvimTreeSpecialFile = { fg = colors.fg },
