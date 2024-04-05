@@ -29,7 +29,7 @@ local function set_groups()
   local groups = {
     -- Base.
     Normal = { fg = colors.fg, bg = colors.bg },
-    NormalFloat = { bg = colors.bglight },
+    NormalFloat = { bg = colors.bgmid },
     FloatBorder = { fg = colors.fg1 },
     FloatTitle = { fg = colors.fg },
     ColorColumn = { bg = colors.bgmid },
@@ -65,6 +65,7 @@ local function set_groups()
     SpellBad = { sp = colors.rose, undercurl = true },
     SpellRare = { sp = colors.leaf, undercurl = true },
     StatusLine = { fg = colors.bgmid, bg = colors.brightsky, bold = true },
+    StatusLineAccent = { fg = colors.bgmid, bg = colors.brightsky, bold = true },
     StatusLineNC = { fg = colors.bg, bg = colors.skylighter, bold = true },
     WildMenu = { fg = colors.fg, bg = colors.rose },
     TabLine = { fg = colors.bgmid, bg = colors.water, bold = true },
