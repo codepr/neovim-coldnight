@@ -226,8 +226,8 @@ local function set_groups()
     NeogitDiffContextHighlight = { bg = colors.bg },
     NeogitHunkHeader = { fg = colors.water },
     NeogitHunkHeaderHighlight = { fg = colors.water, bg = colors.bg },
-    NeogitDiffAddHighlight = { bg = colors.sky },
-    NeogitDiffDeleteHighlight = { bg = colors.rose },
+    NeogitDiffAddHighlight = { fg = colors.darkgreen, bg = colors.sky },
+    NeogitDiffDeleteHighlight = { fg = colors.darkred, bg = colors.rose },
     NeogitDiffAdd = { fg = colors.darkgreen },
     NeogitDiffDelete = { fg = colors.darkred }
 }
