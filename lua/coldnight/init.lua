@@ -223,9 +223,9 @@ local function set_groups()
     IndentBlanklineContextChar = { fg = colors.bglight },
 
     -- Neogit.
-    NeogitDiffContextHighlight = { bg = colors.bgmid },
+    NeogitDiffContextHighlight = { bg = colors.bg },
     NeogitHunkHeader = { fg = colors.water },
-    NeogitHunkHeaderHighlight = { fg = colors.water, bg = colors.bgmid },
+    NeogitHunkHeaderHighlight = { fg = colors.water, bg = colors.bg },
     NeogitDiffAddHighlight = { bg = colors.sky },
     NeogitDiffDeleteHighlight = { bg = colors.rose },
 }
