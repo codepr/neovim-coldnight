@@ -104,7 +104,7 @@ local function set_groups()
     DiffAdded = { fg = colors.sky },
     DiffDelete = { bg = colors.rose1 },
     DiffRemoved = { fg = colors.rose },
-    DiffText = { bg = colors.water },
+    DiffText = { bg = colors.bg },
     DiffChange = { bg = colors.water },
 
     -- LSP.
