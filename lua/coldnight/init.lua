@@ -228,6 +228,8 @@ local function set_groups()
     NeogitHunkHeaderHighlight = { fg = colors.water, bg = colors.bg },
     NeogitDiffAddHighlight = { bg = colors.sky },
     NeogitDiffDeleteHighlight = { bg = colors.rose },
+    NeogitDiffAdd = { fg = colors.darkgreen },
+    NeogitDiffDelete = { fg = colors.darkred }
 }
 
   groups = vim.tbl_extend('force', groups, type(config.overrides) == 'function' and config.overrides() or config.overrides)

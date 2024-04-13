@@ -27,6 +27,8 @@ function colors.generate()
     colors.rose1 = '#FF9F89'
     colors.blossom = '#D3869B'
     colors.blossom1 = '#D0878D'
+    colors.darkgreen = '#438C1C'
+    colors.darkred = '#AD3224'
   else
     colors.white = '#000000'
     colors.bg = '#E0E0E0'
